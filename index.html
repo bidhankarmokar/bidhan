@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Normal Experience</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -25,19 +26,19 @@
               <a href="#home" class="nav__item">Home</a>
             </li>
             <li class="nav__list">
-              <a href="" class="nav__item">About</a>
+              <a href="#about" class="nav__item">About</a>
             </li>
             <li class="nav__list">
-              <a href="" class="nav__item">Service</a>
+              <a href="#service" class="nav__item">Service</a>
             </li>
             <li class="nav__list">
-              <a href="" class="nav__item">Work</a>
+              <a href="#work" class="nav__item">Work</a>
             </li>
             <li class="nav__list">
-              <a href="" class="nav__item">Blog</a>
+              <a href="#blog" class="nav__item">Blog</a>
             </li>
             <li class="nav__list">
-              <a href="" class="nav__item">Contact</a>
+              <a href="#contact" class="nav__item">Contact</a>
             </li>
           </ul>
         </nav>
@@ -74,16 +75,22 @@
                 View Work<i class="ri-arrow-right-up-line"></i>
               </button>
             </div>
-            <label for="social__links">Follow Me</label>
-            <div class="social__links" id="social__links">
-              <a href="" class="social__link"
-                ><i class="ri-facebook-fill"></i
-              ></a>
-              <a href="" class="social__link"><i class="ri-github-line"></i></a>
-              <a href="" class="social__link"
-                ><i class="ri-linkedin-fill"></i
-              ></a>
-              <a href="" class="social__link"><i class="ri-tiktok-fill"></i></a>
+            <div class="socials">
+              <div class="social__label">Follow Me</div>
+              <div class="social__links">
+                <a href="" class="social__link"
+                  ><i class="ri-facebook-fill"></i
+                ></a>
+                <a href="" class="social__link"
+                  ><i class="ri-github-line"></i
+                ></a>
+                <a href="" class="social__link"
+                  ><i class="ri-linkedin-fill"></i
+                ></a>
+                <a href="" class="social__link"
+                  ><i class="ri-tiktok-fill"></i
+                ></a>
+              </div>
             </div>
           </div>
           <div class="home__img">
@@ -91,30 +98,7 @@
           </div>
         </div>
       </section>
-      <!-- <section id="about">
-        <span class="sub__heading">About Me</span>
-        <div class="wrapper about__wrapper">
-          <div class="about__content">
-            <h2>I'm Bidhan Karmokar</h2>
-            <p>
-              I am a dedicated Web Developer with a deep passion for digital
-              creation and continuous learning. Currently, I am proficient in
-              HTML, CSS, and JavaScript, and I have recently started my journey
-              into React.js to build dynamic and interactive user interfaces.
-              While I have a solid foundation in PHP and SQL, I am strategically
-              evolving my skill set to meet modern digital demands. My primary
-              focus is mastering the MERN Stack, diving deep into Node.js,
-              Express.js, and MongoDB, alongside Next.js for high-performance
-              web applications. I believe in blending modern aesthetics with
-              clean, efficient code to deliver seamless user experiences that
-              truly represent a brand’s excellence.
-            </p>
-          </div>
-          <div class="about__image">
-            <img src="./images/hero-image.png" alt="" />
-          </div>
-        </div>
-      </section> -->
+
       <section class="wrapper aboutSection" id="about">
         <h2>About Me</h2>
 
@@ -125,18 +109,25 @@
               <span class="highlight highlight--normal">Bidhan Karmokar.</span>
             </h3>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-              voluptatem soluta praesentium laborum impedit, nobis suscipit
-              recusandae ex quam, delectus, quae animi sequi porro quos
-              architecto accusamus. Dolorem sit quas corrupti architecto cumque,
-              iusto, odio minus reiciendis atque voluptate provident amet
-              inventore quisquam officiis eos ab necessitatibus eius aperiam
-              perferendis tenetur nisi culpa iste magnam. Eaque animi in tempore
-              iusto natus voluptas delectus fuga eius architecto deserunt. Error
-              perferendis voluptatum maiores magni totam cum asperiores beatae
-              aut, ab esse et consequatur minima, incidunt eligendi ipsum quos
-              itaque sapiente inventore maxime impedit voluptates optio debitis
-              molestiae? Sed corporis possimus placeat nihil.
+              I am a passionate <strong>Frontend Developer</strong> dedicated to
+              <strong>crafting amazing</strong> and immersive digital
+              experiences. I specialize in building highly interactive,
+              pixel-perfect, and responsive websites using
+              <strong>HTML, CSS, JavaScript, and GSAP</strong>. My focus is on
+              writing clean, efficient code that brings modern designs to life.
+            </p>
+            <p>
+              Currently, I am deep-diving into <strong>React.js</strong> to
+              build dynamic and high-performance user interfaces. I love the
+              challenge of turning complex UI/UX designs into functional,
+              user-friendly web applications.
+            </p>
+            <p>
+              Looking ahead, I am committed to becoming a Full-Stack expert. My
+              roadmap includes mastering <strong>Next.js</strong> for
+              server-side rendering and exploring the
+              <strong>Node.js</strong> and <strong>Express.js</strong> ecosystem
+              to build robust, scalable, and end-to-end web solutions.
             </p>
           </div>
           <div class="aboutImage">
@@ -369,7 +360,7 @@
           </div>
         </div>
       </section>
-      <section class="wrapper portfolioSection">
+      <section class="wrapper portfolioSection" id="work">
         <h2 class="title">My Work</h2>
 
         <div class="work__grid">
@@ -488,7 +479,11 @@
           </div>
         </div>
       </section>
-      <section class="wrapper testimonials" aria-labelledby="testimonial-title">
+      <section
+        class="wrapper testimonials"
+        aria-labelledby="testimonial-title"
+        id="testimonials"
+      >
         <div class="testimonials__container">
           <header class="testimonials__header">
             <h2 id="testimonial-title" class="testimonials__title">Reviews</h2>
@@ -611,7 +606,7 @@
           </div>
         </div>
       </section>
-      <section class="wrapper blog">
+      <section class="wrapper blog" id="blog">
         <div class="blog__container">
           <div class="blog__header">
             <h2 class="blog__title">Articles</h2>
@@ -664,7 +659,7 @@
           </div>
         </div>
       </section>
-      <section class="wrapper contactSection">
+      <section class="wrapper contactSection" id="contact">
         <h2>Contact Me</h2>
         <div class="contactWrapper">
           <div class="myInfo">
@@ -691,6 +686,22 @@
               <div>
                 <label>Phone</label>
                 <span>+880 1345939358</span>
+              </div>
+            </div>
+            <div class="socials">
+              <div class="social__links">
+                <a href="" class="social__link"
+                  ><i class="ri-facebook-fill"></i
+                ></a>
+                <a href="" class="social__link"
+                  ><i class="ri-github-line"></i
+                ></a>
+                <a href="" class="social__link"
+                  ><i class="ri-linkedin-fill"></i
+                ></a>
+                <a href="" class="social__link"
+                  ><i class="ri-tiktok-fill"></i
+                ></a>
               </div>
             </div>
           </div>
