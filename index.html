@@ -43,8 +43,8 @@
           </ul>
         </nav>
         <div class="btn__group">
-          <button type="button" class="open__menu">
-            <i class="ri-menu-line"></i>
+          <button type="button" class="open__menu" aria-label="Hamburger manu">
+            <i class="ri-menu-line" aria-hidden="true"></i>
           </button>
           <button type="button" class="btn btn--primary">
           <a href="#contact">Let's Talk <i class="ri-user-voice-line"></i></a></i>
@@ -53,11 +53,11 @@
       </div>
     </header>
     <main>
-      <section id="home">
+      <section id="home" aria-describedby="home__title">
         <div class="wrapper home__wrapper">
           <div class="home__content">
             <span class="sub__heading">Hey there! 👋</span>
-            <h1 class="home__heading">
+            <h1 class="home__heading" id="home__title">
               Let's <span class="highlight">Craft</span> Something <br />
               <span class="highlight">Amazing</span> Together
             </h1>
@@ -77,22 +77,22 @@
               <div class="social__label">Follow Me</div>
               <div class="social__links">
                 <a href="" class="social__link"
-                  aria-label="Follow Me On Facebook" target="_blank" rel="noopener noreferrer"><i class="ri-facebook-fill"></i
+                  aria-label="Follow Me On Facebook" target="_blank" rel="noopener noreferrer"><i class="ri-facebook-fill" aria-hidden="true"></i
                 ></a>
                 <a href="" class="social__link"
-                  aria-label="Follow Me On GitHub" target="_blank"  rel="noopener noreferrer"><i class="ri-github-line"></i
+                  aria-label="Follow Me On GitHub" target="_blank"  rel="noopener noreferrer"><i class="ri-github-line" aria-hidden="true"></i
                 ></a>
                 <a href="" class="social__link"
-                  aria-label="Follow Me On Linkedin" target="_blank" rel="noopener noreferrer" ><i class="ri-linkedin-fill"></i
+                  aria-label="Follow Me On Linkedin" target="_blank" rel="noopener noreferrer" ><i class="ri-linkedin-fill" aria-hidden="true"></i
                 ></a>
                 <a href="" class="social__link"
-                  aria-label="Follow Me On Tiktok" target="_blank" rel="noopener noreferrer"><i class="ri-tiktok-fill"></i
+                  aria-label="Follow Me On Tiktok" target="_blank" rel="noopener noreferrer"><i class="ri-tiktok-fill" aria-hidden="true"></i
                 ></a>
               </div>
             </div>
           </div>
           <div class="home__img">
-            <img src="./images/hero-image.png" alt="" />
+            <img src="./images/hero-image.png" alt="Bidhan Karmokar Image" />
           </div>
         </div>
         <div class="wrapper stats">
@@ -118,8 +118,8 @@
         </div>
       </section>
 
-      <section class="wrapper about__section" id="about">
-        <h2>About Me</h2>
+      <section class="wrapper about__section" id="about" aria-describedby="about__title">
+        <h2 id="about__title">About Me</h2>
 
         <div class="about__wrapper">
           <div class="about__content">
@@ -150,7 +150,7 @@
             </p>
           </div>
           <div class="about__image">
-            <img src="./images/about.png" alt="" />
+            <img src="./images/about.png" alt="Bidhan Karmokar image" />
           </div>
         </div>
         <div class="group">
@@ -302,14 +302,14 @@
           </div>
         </div>
       </section>
-      <section class="wrapper service__section" id="service">
-        <h2>My Services</h2>
+      <section class="wrapper service__section" id="service" aria-describedby="service__title">
+        <h2 id="service__title">My Services</h2>
 
         <div class="service__grid">
           <!-- Service 1 -->
           <div class="service__card">
             <div class="service__icon">
-              <i class="ri-layout-masonry-line"></i>
+              <i class="ri-layout-masonry-line" aria-hidden="true"></i>
             </div>
             <h3>Pixel-Perfect Design Conversion</h3>
             <p>
@@ -322,7 +322,7 @@
           <!-- Service 2 -->
           <div class="service__card">
             <div class="service__icon">
-              <i class="ri-smartphone-line"></i>
+              <i class="ri-smartphone-line" aria-hidden="true"></i>
             </div>
             <h3>Responsive & Adaptive UI</h3>
             <p>
@@ -334,7 +334,7 @@
 
           <!-- Service 3 -->
           <div class="service__card">
-            <div class="service__icon"><i class="ri-magic-line"></i></div>
+            <div class="service__icon"><i class="ri-magic-line" aria-hidden="true"></i></div>
             <h3>Interactive GSAP Animations</h3>
             <p>
               Creating immersive web experiences using GSAP. From smooth
@@ -346,7 +346,7 @@
           <!-- Service 4 -->
           <div class="service__card">
             <div class="service__icon">
-              <i class="ri-code-s-slash-line"></i>
+              <i class="ri-code-s-slash-line" aria-hidden="true"></i>
             </div>
             <h3>Modern Frontend Development</h3>
             <p>
@@ -359,7 +359,7 @@
           <!-- Service 5 -->
           <div class="service__card">
             <div class="service__icon">
-              <i class="ri-flashlight-line"></i>
+              <i class="ri-flashlight-line" aria-hidden="true"></i>
             </div>
             <h3>Performance & Speed Optimization</h3>
             <p>
@@ -371,7 +371,7 @@
 
           <!-- Service 6 -->
           <div class="service__card">
-            <div class="service__icon"><i class="ri-tools-line"></i></div>
+            <div class="service__icon"><i class="ri-tools-line" aria-hidden="true"></i></div>
             <h3>Technical Support & Bug Squashing</h3>
             <p>
               Identifying and resolving complex frontend bugs, layout breaks,
@@ -388,26 +388,26 @@
           <div class="work__card one">
             <img
               src="./images/liquid-effect-landing-page_23-2148123527.avif"
-              alt="Work 1"
+              alt="Project image one"
             />
             <div class="overlay">
               <div class="icons">
                 <a href="#" title="View Site"
-                  ><i class="ri-external-link-line"></i
+                  ><i class="ri-external-link-line" aria-hidden="true"></i
                 ></a>
-                <a href="#" title="Details"><i class="ri-eye-line"></i></a>
+                <a href="#" title="Details"><i class="ri-eye-line" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
 
           <div class="work__card two">
-            <img src="./images/RxE4MGO4hoqQD1U1IWCh31XtIVk.avif" alt="Work 2" />
+            <img src="./images/RxE4MGO4hoqQD1U1IWCh31XtIVk.avif" alt="Project image two" />
             <div class="overlay">
               <div class="icons">
                 <a href="#" title="View Site"
-                  ><i class="ri-external-link-line"></i
+                  ><i class="ri-external-link-line" aria-hidden="true"></i
                 ></a>
-                <a href="#" title="Details"><i class="ri-eye-line"></i></a>
+                <a href="#" title="Details"><i class="ri-eye-line" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -415,28 +415,28 @@
           <div class="work__card three">
             <img
               src="./images/original-4216f125ee26fd3280e1be63a45e668b.webp"
-              alt="Work 3"
+              alt="Project image three"
             />
             <div class="overlay">
               <div class="icons">
                 <a href="#" title="View Site"
-                  ><i class="ri-external-link-line"></i
+                  ><i class="ri-external-link-line" aria-hidden="true"></i
                 ></a>
-                <a href="#" title="Details"><i class="ri-eye-line"></i></a>
+                <a href="#" title="Details"><i class="ri-eye-line" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
           <div class="work__card four">
             <img
               src="./images/original-49a12e149270d50e6baca6301d07008c.webp"
-              alt="Work 4"
+              alt="Project image three"
             />
             <div class="overlay">
               <div class="icons">
                 <a href="#" title="View Site"
-                  ><i class="ri-external-link-line"></i
+                  ><i class="ri-external-link-line" aria-hidden="true"></i
                 ></a>
-                <a href="#" title="Details"><i class="ri-eye-line"></i></a>
+                <a href="#" title="Details"><i class="ri-eye-line" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -444,14 +444,14 @@
           <div class="work__card five">
             <img
               src="./images/original-82775a045ab5a047d1a5a19306e82adc.webp"
-              alt="Work 2"
+              alt="Project image four"
             />
             <div class="overlay">
               <div class="icons">
                 <a href="#" title="View Site"
-                  ><i class="ri-external-link-line"></i
+                  ><i class="ri-external-link-line" aria-hidden="true"></i
                 ></a>
-                <a href="#" title="Details"><i class="ri-eye-line"></i></a>
+                <a href="#" title="Details"><i class="ri-eye-line" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -459,42 +459,42 @@
           <div class="work__card six">
             <img
               src="./images/original-9e137f426871c058408fe992505272c4.webp"
-              alt="Work 3"
+              alt="Project image five"
             />
             <div class="overlay">
               <div class="icons">
                 <a href="#" title="View Site"
-                  ><i class="ri-external-link-line"></i
+                  ><i class="ri-external-link-line" aria-hidden="true"></i
                 ></a>
-                <a href="#" title="Details"><i class="ri-eye-line"></i></a>
+                <a href="#" title="Details"><i class="ri-eye-line" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
           <div class="work__card seven">
             <img
               src="./images/original-b164cacee230bc1277ebdc6726d7e853.webp"
-              alt="Work 3"
+              alt="Project image seven"
             />
             <div class="overlay">
               <div class="icons">
                 <a href="#" title="View Site"
-                  ><i class="ri-external-link-line"></i
+                  ><i class="ri-external-link-line" aria-hidden="true"></i
                 ></a>
-                <a href="#" title="Details"><i class="ri-eye-line"></i></a>
+                <a href="#" title="Details"><i class="ri-eye-line" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
           <div class="work__card eight">
             <img
               src="./images/original-fca9d854534b8535f7ecf666915b0803.webp"
-              alt="Work 3"
+              alt="Project image eight"
             />
             <div class="overlay">
               <div class="icons">
                 <a href="#" title="View Site"
                   ><i class="ri-external-link-line"></i
                 ></a>
-                <a href="#" title="Details"><i class="ri-eye-line"></i></a>
+                <a href="#" title="Details"><i class="ri-eye-line" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -671,7 +671,7 @@
             <!-- Featured -->
             <article class="blog__card blog__card--featured">
               <span class="blog__tag">Featured</span>
-              <img src="./images/images (3).jpg" alt="" />
+              <img src="./images/imagefour.jpg" alt="Building Modern Website" />
               <h3 class="blog__card-title">
                 Building a Modern Portfolio with Sticky Navigation
               </h3>
@@ -684,7 +684,7 @@
 
             <article class="blog__card">
               <span class="blog__tag">JavaScript</span>
-              <img src="./images/images (2).jpg" alt="" />
+              <img src="./images/imagethree.jpg" alt="Dynamic Typing Explained" />
               <h3 class="blog__card-title">Dynamic Typing Explained</h3>
               <p class="blog__desc">
                 typeof null keno object hoy — real explanation.
@@ -694,7 +694,7 @@
 
             <article class="blog__card">
               <span class="blog__tag">CSS</span>
-              <img src="./images/images.jpg" alt="" />
+              <img src="./images/imageone.jpg" alt="Grid vs flexbox" />
               <h3 class="blog__card-title">Grid vs Flexbox</h3>
               <p class="blog__desc">
                 Layout decision making for real-world UI.
@@ -704,7 +704,7 @@
 
             <article class="blog__card">
               <span class="blog__tag">UI</span>
-              <img src="./images/images (1).jpg" alt="" />
+              <img src="./images/imagetwo.jpg" alt="Dark light mode system" />
               <h3 class="blog__card-title">Dark Light Mode System</h3>
               <p class="blog__desc">
                 Theme toggle architecture with CSS variables.
@@ -791,7 +791,7 @@
               </div>
 
               <button type="submit" class="submit__btn">
-                Send Message <i class="ri-send-plane-fill"></i>
+                Send Message <i class="ri-send-plane-fill" aria-hidden="true"></i>
               </button>
             </form>
           </div>
@@ -803,7 +803,9 @@
         <div class="footer__links">
           <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#projects">Projects</a>
+          <a href="#service">About</a>
+          <a href="#work">Work</a>
+          <a href="#testimonial">Work</a>
           <a href="#contact">Contact</a>
         </div>
         <div class="footer__legal">
