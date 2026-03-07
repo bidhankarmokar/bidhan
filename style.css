@@ -50,6 +50,7 @@ h2{
   margin-inline: auto;
   padding: 0 8px;
   font-size: clamp(28px, calc(28px + (40 - 28) * ((100vw - 320px) / (1280 - 320))), 40px);
+  margin-bottom: 56px;
 }
 
 p {
