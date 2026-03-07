@@ -891,13 +891,13 @@ section[id] {
 
 .info__group:hover i {
   background: var(--accent-link);
-  color: #fff;
+  color: var(--text);
 }
 
 .info__group label {
   display: block;
   font-size: 12px;
-  color: var(--text);
+  color: var(--text-light);
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -906,7 +906,7 @@ section[id] {
 .info__group span {
   font-style: normal;
   font-size: 16px;
-  color: var(--text-light);
+  color: var(--text);
 }
 
 .input__box {
