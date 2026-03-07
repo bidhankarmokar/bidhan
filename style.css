@@ -92,6 +92,15 @@ strong, .highlight {
   color: var(--accent-link);
 }
 
+.visually__hidden{ 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  overflow: hidden;
+}
 /* =========================
    SECTIONS & SPACING
 ========================= */
@@ -931,7 +940,7 @@ section[id] {
   width: 100%;
   padding: 14px;
   background: var(--accent-link);
-  color: var(--text-light);
+  color: var(--bg);
   border: none;
   border-radius: 10px;
   font-weight: 600;
@@ -944,7 +953,7 @@ section[id] {
 }
 
 .submit__btn:hover {
-  box-shadow: 0 8px 20px rgba(99,102,241,0.3);
+  box-shadow: 0 0 16px 4px rgba(255, 255, 255, 0.1);
 }
 
 /* =========================
