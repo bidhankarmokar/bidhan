@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Normal Experience</title>
+    <title>Bidhan Karmokar</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media.css" />
     <link
@@ -18,12 +18,12 @@
   <body>
     <header class="header">
       <div class="wrapper header__wrapper">
-        <a href="/" class="logo">B</a>
-        <nav class="nav__bar">
-          <div class="close__menu"><i class="ri-close-large-line"></i></div>
+        <a href="/" class="logo" aria-label="Logo">B</a>
+        <nav class="nav__bar" aria-label="Main Navigation">
+          <button type="button" class="close__menu" aria-label="Navigation Bar Close Button"><i class="ri-close-large-line"></i></button>
           <ul class="nav__lists">
             <li class="nav__list on">
-              <a href="#home" class="nav__item">Home</a>
+              <a href="#home" class="nav__item" aria-current="page">Home</a>
             </li>
             <li class="nav__list">
               <a href="#about" class="nav__item">About</a>
@@ -43,15 +43,12 @@
           </ul>
         </nav>
         <div class="btn__group">
-          <button class="header__btn open__menu">
-            <i class="ri-menu-fill"></i>
+          <button type="button" class="open__menu">
+            <i class="ri-menu-line"></i>
           </button>
-          <button type="button" class="header__btn">
-            <i class="ri-question-mark"></i>
-          </button>
-          <button type="button" class="header__btn">
-            <i class="ri-settings-3-line"></i>
-          </button>
+          <button type="button" class="btn btn--primary">
+          Let's Talk <i class="ri-user-voice-line"></i>
+        </button>
         </div>
       </div>
     </header>
@@ -61,17 +58,18 @@
           <div class="home__content">
             <span class="sub__heading">Hey there! 👋</span>
             <h1 class="home__heading">
-              Let's Craft Something <br />
-              Amazing Together
+              Let's <span class="highlight">Craft</span> Something <br />
+              <span class="highlight">Amazing</span> Together
             </h1>
+            <h2 hidden>Web Developer</h2>
             <p class="home__text">
               Turning your vision into digital reality. I focus on precision
               code, modern aesthetics, and seamless user experiences to help
               your brand excel in the digital world.
             </p>
             <div class="btns">
-              <button class="btn">Hire Me<i class="ri-phone-line"></i></button>
-              <button class="btn">
+              <button class="btn btn--primary">Hire Me<i class="ri-phone-line"></i></button>
+              <button class="btn btn--secondary">
                 View Work<i class="ri-arrow-right-up-line"></i>
               </button>
             </div>
@@ -79,16 +77,16 @@
               <div class="social__label">Follow Me</div>
               <div class="social__links">
                 <a href="" class="social__link"
-                  ><i class="ri-facebook-fill"></i
+                  aria-label="Follow Me On Facebook" target="_blank" rel="noopener noreferrer"><i class="ri-facebook-fill"></i
                 ></a>
                 <a href="" class="social__link"
-                  ><i class="ri-github-line"></i
+                  aria-label="Follow Me On GitHub" target="_blank"  rel="noopener noreferrer"><i class="ri-github-line"></i
                 ></a>
                 <a href="" class="social__link"
-                  ><i class="ri-linkedin-fill"></i
+                  aria-label="Follow Me On Linkedin" target="_blank" rel="noopener noreferrer" ><i class="ri-linkedin-fill"></i
                 ></a>
                 <a href="" class="social__link"
-                  ><i class="ri-tiktok-fill"></i
+                  aria-label="Follow Me On Tiktok" target="_blank" rel="noopener noreferrer"><i class="ri-tiktok-fill"></i
                 ></a>
               </div>
             </div>
@@ -97,13 +95,34 @@
             <img src="./images/hero-image.png" alt="" />
           </div>
         </div>
+        <div class="wrapper stats">
+          <div class="stats__item">
+            <h3 class="stats__count">1+ <span>Year</span></h3>
+            <p class="stats__text">Professional Experience</p>
+          </div>
+
+          <div class="stats__item">
+            <h3 class="stats__count">4+ <span>Clients</span></h3>
+            <p class="stats__text">Global Collaborations</p>
+          </div>
+
+          <div class="stats__item">
+            <h3 class="stats__count">6+ <span>Projects</span></h3>
+            <p class="stats__text">Successfully Delivered</p>
+          </div>
+
+          <div class="stats__item">
+            <h3 class="stats__count">2+ <span>Projects</span></h3>
+            <p class="stats__text">Currently In-Progress</p>
+          </div>
+        </div>
       </section>
 
-      <section class="wrapper aboutSection" id="about">
+      <section class="wrapper about__section" id="about">
         <h2>About Me</h2>
 
-        <div class="aboutWrapper">
-          <div class="aboutContent">
+        <div class="about__wrapper">
+          <div class="about__content">
             <h3>
               Hey there! I'm
               <span class="highlight highlight--normal">Bidhan Karmokar.</span>
@@ -130,7 +149,7 @@
               to build robust, scalable, and end-to-end web solutions.
             </p>
           </div>
-          <div class="aboutImage">
+          <div class="about__image">
             <img src="./images/about.png" alt="" />
           </div>
         </div>
@@ -181,9 +200,9 @@
         <div class="group">
           <div class="skill">
             <h4>My Skills</h4>
-            <ul class="skillContainer">
+            <ul class="skill__container">
               <li>
-                <div class="skillDetails">
+                <div class="skill__details">
                   <span>HTML</span>
                   <span>86%</span>
                 </div>
@@ -192,7 +211,7 @@
                 </div>
               </li>
               <li>
-                <div class="skillDetails">
+                <div class="skill__details">
                   <span>CSS</span>
                   <span>84%</span>
                 </div>
@@ -201,7 +220,7 @@
                 </div>
               </li>
               <li>
-                <div class="skillDetails">
+                <div class="skill__details">
                   <span>JavaScript</span>
                   <span>76%</span>
                 </div>
@@ -210,7 +229,7 @@
                 </div>
               </li>
               <li>
-                <div class="skillDetails">
+                <div class="skill__details">
                   <span>Bootstrap</span>
                   <span>80%</span>
                 </div>
@@ -219,7 +238,7 @@
                 </div>
               </li>
               <li>
-                <div class="skillDetails">
+                <div class="skill__details">
                   <span>GSAP</span>
                   <span>74%</span>
                 </div>
@@ -228,7 +247,7 @@
                 </div>
               </li>
               <li>
-                <div class="skillDetails">
+                <div class="skill__details">
                   <span>React</span>
                   <span>23%</span>
                 </div>
@@ -283,13 +302,13 @@
           </div>
         </div>
       </section>
-      <section class="wrapper serviceSection" id="service">
+      <section class="wrapper service__section" id="service">
         <h2>My Services</h2>
 
-        <div class="serviceGrid">
+        <div class="service__grid">
           <!-- Service 1 -->
-          <div class="serviceCard">
-            <div class="serviceIcon">
+          <div class="service__card">
+            <div class="service__icon">
               <i class="ri-layout-masonry-line"></i>
             </div>
             <h3>Pixel-Perfect Design Conversion</h3>
@@ -301,8 +320,8 @@
           </div>
 
           <!-- Service 2 -->
-          <div class="serviceCard">
-            <div class="serviceIcon">
+          <div class="service__card">
+            <div class="service__icon">
               <i class="ri-smartphone-line"></i>
             </div>
             <h3>Responsive & Adaptive UI</h3>
@@ -314,8 +333,8 @@
           </div>
 
           <!-- Service 3 -->
-          <div class="serviceCard">
-            <div class="serviceIcon"><i class="ri-magic-line"></i></div>
+          <div class="service__card">
+            <div class="service__icon"><i class="ri-magic-line"></i></div>
             <h3>Interactive GSAP Animations</h3>
             <p>
               Creating immersive web experiences using GSAP. From smooth
@@ -325,8 +344,10 @@
           </div>
 
           <!-- Service 4 -->
-          <div class="serviceCard">
-            <div class="serviceIcon"><i class="ri-code-s-slash-line"></i></div>
+          <div class="service__card">
+            <div class="service__icon">
+              <i class="ri-code-s-slash-line"></i>
+            </div>
             <h3>Modern Frontend Development</h3>
             <p>
               Developing fast, scalable, and maintainable frontend solutions
@@ -336,8 +357,8 @@
           </div>
 
           <!-- Service 5 -->
-          <div class="serviceCard">
-            <div class="serviceIcon">
+          <div class="service__card">
+            <div class="service__icon">
               <i class="ri-flashlight-line"></i>
             </div>
             <h3>Performance & Speed Optimization</h3>
@@ -349,8 +370,8 @@
           </div>
 
           <!-- Service 6 -->
-          <div class="serviceCard">
-            <div class="serviceIcon"><i class="ri-tools-line"></i></div>
+          <div class="service__card">
+            <div class="service__icon"><i class="ri-tools-line"></i></div>
             <h3>Technical Support & Bug Squashing</h3>
             <p>
               Identifying and resolving complex frontend bugs, layout breaks,
@@ -360,7 +381,7 @@
           </div>
         </div>
       </section>
-      <section class="wrapper portfolioSection" id="work">
+      <section class="wrapper portfolio__section" id="work">
         <h2 class="title">My Work</h2>
 
         <div class="work__grid">
@@ -497,15 +518,13 @@
             >
               <div class="card__header">
                 <img
-                  src="./images/hero-image.png"
+                  src="./images/user1.jpg"
                   alt="Bidhan"
                   class="card__image"
                   loading="lazy"
                 />
                 <div class="card__meta">
-                  <span class="card__name" itemprop="author"
-                    >Bidhan Karmokar</span
-                  >
+                  <span class="card__name" itemprop="author">David Antro </span>
                   <time
                     datetime="2026-03-03"
                     class="card__date"
@@ -519,7 +538,16 @@
                 <q
                   >The service was absolutely fantastic! The team was
                   professional, and the results exceeded my expectations. I
-                  highly recommend them to anyone looking for quality work.</q
+                  highly recommend them to anyone looking for quality work.
+                  Their attention to detail and commitment to deadlines truly
+                  set them apart from others. Throughout the project,
+                  communication was seamless, and they were always ready to
+                  incorporate my feedback. It’s rare to find a team that
+                  genuinely cares about the client's vision as much as they do.
+                  I am beyond satisfied with the final outcome and will
+                  definitely collaborate with them again in the future. If you
+                  want top-notch results with a stress-free experience, this is
+                  the team to go for.</q
                 >
               </blockquote>
             </article>
@@ -531,13 +559,13 @@
             >
               <div class="card__header">
                 <img
-                  src="/images/hero-image.png"
+                  src="/images/user2.avif"
                   alt="Sarah"
                   class="card__image"
                   loading="lazy"
                 />
                 <div class="card__meta">
-                  <span class="card__name" itemprop="author">Sarah Taylor</span>
+                  <span class="card__name" itemprop="author">Sam Taylor</span>
                   <time datetime="2026-02-28" class="card__date"
                     >28/02/2026</time
                   >
@@ -547,7 +575,21 @@
               <blockquote class="card__quote">
                 <q
                   >Top-notch quality and great communication. They delivered
-                  everything on time.</q
+                  everything on time. The team's professional approach and
+                  attention to detail made the entire process smooth and
+                  worry-free. From the very first meeting, they perfectly
+                  understood my requirements and provided creative solutions
+                  that exceeded my initial vision. The technical execution was
+                  flawless, and the final product was both clean and highly
+                  functional. It is rare to find such a dedicated partner who
+                  truly prioritizes client satisfaction above all else. They
+                  were always available to answer my questions and kept me
+                  updated throughout every stage of the development. I am
+                  extremely pleased with the results and the positive impact it
+                  has had on my project. Their expertise and passion for quality
+                  work are truly commendable. I would highly recommend their
+                  services to anyone looking for excellence, reliability, and a
+                  stress-free collaboration.</q
                 >
               </blockquote>
             </article>
@@ -559,7 +601,7 @@
             >
               <div class="card__header">
                 <img
-                  src="./images/hero-image.png"
+                  src="./images/user3.jpg"
                   alt="John"
                   class="card__image"
                   loading="lazy"
@@ -573,7 +615,14 @@
               </div>
               <div class="card__rating">★★★★★</div>
               <blockquote class="card__quote">
-                <q>Simply the best in the business. No complaints at all!</q>
+                <q
+                  >Simply the best in the business. No complaints at all! The
+                  professionalism and expertise they brought to the project were
+                  truly outstanding. They handled everything with such ease and
+                  delivered a result that was both polished and functional. I am
+                  beyond impressed and will definitely be returning for future
+                  projects.</q
+                >
               </blockquote>
             </article>
 
@@ -584,13 +633,13 @@
             >
               <div class="card__header">
                 <img
-                  src="./images/hero-image.png"
+                  src="./images/user4.jpg"
                   alt="Mitu"
                   class="card__image"
                   loading="lazy"
                 />
                 <div class="card__meta">
-                  <span class="card__name">Mitu Islam</span>
+                  <span class="card__name">Lucia Paul</span>
                   <time datetime="2026-02-05" class="card__date"
                     >05/02/2026</time
                   >
@@ -599,7 +648,13 @@
               <div class="card__rating">★★★★★</div>
               <blockquote class="card__quote">
                 <q
-                  >Highly efficient team! Definitely working with them again.</q
+                  >Highly efficient team! Definitely working with them again.
+                  Their ability to deliver top-quality results under tight
+                  deadlines is truly impressive. The entire workflow was smooth,
+                  and they maintained clear communication at every stage of the
+                  project. I am extremely satisfied with the final outcome and
+                  would recommend their services to anyone looking for
+                  excellence.</q
                 >
               </blockquote>
             </article>
@@ -659,13 +714,13 @@
           </div>
         </div>
       </section>
-      <section class="wrapper contactSection" id="contact">
+      <section class="wrapper contact__section" id="contact">
         <h2>Contact Me</h2>
-        <div class="contactWrapper">
-          <div class="myInfo">
+        <div class="contact__wrapper">
+          <div class="my__info">
             <h3>Physical contact or message</h3>
 
-            <div class="info-group">
+            <div class="info__group">
               <i class="ri-map-pin-2-line"></i>
               <div>
                 <label>Address</label>
@@ -673,7 +728,7 @@
               </div>
             </div>
 
-            <div class="info-group">
+            <div class="info__group">
               <i class="ri-mail-send-line"></i>
               <div>
                 <label>Email</label>
@@ -681,69 +736,61 @@
               </div>
             </div>
 
-            <div class="info-group">
+            <div class="info__group">
               <i class="ri-phone-line"></i>
               <div>
                 <label>Phone</label>
                 <span>+880 1345939358</span>
               </div>
             </div>
-            <div class="socials">
-              <div class="social__links">
-                <a href="" class="social__link"
-                  ><i class="ri-facebook-fill"></i
-                ></a>
-                <a href="" class="social__link"
-                  ><i class="ri-github-line"></i
-                ></a>
-                <a href="" class="social__link"
-                  ><i class="ri-linkedin-fill"></i
-                ></a>
-                <a href="" class="social__link"
-                  ><i class="ri-tiktok-fill"></i
-                ></a>
-              </div>
-            </div>
           </div>
 
-          <div class="form-container">
+          <div class="form__container">
             <h3>Send Message</h3>
             <form action="#">
-              <div class="input-box">
+              <div class="input__box">
                 <label for="name">Name</label>
                 <input
                   type="text"
                   id="name"
+                  name="form__name"
                   placeholder="Enter your name"
                   required
                 />
               </div>
 
-              <div class="input-box">
+              <div class="input__box">
                 <label for="email-field">Email</label>
                 <input
                   type="email"
                   id="email-field"
+                  name="form__email"
                   placeholder="yourname@gmail.com"
                   required
                 />
               </div>
 
-              <div class="input-box">
+              <div class="input__box">
                 <label for="num">Phone</label>
-                <input type="tel" id="num" placeholder="+880..." />
+                <input
+                  type="tel"
+                  id="num"
+                  name="form__phone"
+                  placeholder="+880..."
+                />
               </div>
 
-              <div class="input-box">
+              <div class="input__box">
                 <label for="details">Details</label>
                 <textarea
                   id="details"
                   rows="4"
                   placeholder="How can I help you?"
+                  name="form__message"
                 ></textarea>
               </div>
 
-              <button type="submit" class="submit-btn">
+              <button type="submit" class="submit__btn">
                 Send Message <i class="ri-send-plane-fill"></i>
               </button>
             </form>
@@ -751,27 +798,43 @@
         </div>
       </section>
     </main>
-    <footer class="wrapper main-footer">
-      <div class="footer-top">
-        <div class="footer-links">
+    <footer class="wrapper main__footer">
+      <div class="footer__top">
+        <div class="footer__links">
           <a href="#home">Home</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
-        <div class="footer-legal">
+        <div class="footer__legal">
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>
           <a href="#">Cookie Policy</a>
         </div>
       </div>
-      <hr class="footer-divider" />
-      <div class="footer-bottom">
+      <hr class="footer__divider" />
+      <div class="footer__bottom">
         <p>
           Copyright 2026 by <span>Bidhan Karmokar</span>. All Rights Reserved.
         </p>
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>

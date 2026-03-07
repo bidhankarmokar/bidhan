@@ -13,11 +13,11 @@
     align-items: center;
   }
  
- .aboutWrapper{ 
+ .about__wrapper{ 
   flex-direction: column;
  }
 
-  .aboutContent{ 
+  .about__content{ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,15 +92,15 @@
   .blog__grid{ 
     grid-template-columns: 1fr;
   }
-  .contactWrapper{ 
+  .contact__wrapper{ 
     flex-direction: column;
     align-items: center;
   }
-  .info-group{ 
+  .info__group{ 
     flex-direction: column;
     align-items: flex-start;
   }
-  .footer-top{ 
+  .footer__top{ 
      justify-content: center;
   }
 }
