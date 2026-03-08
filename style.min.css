@@ -161,7 +161,6 @@ section[id] {
 }
 .close__menu:hover,
 .header__btn:hover,
-.logo,
 .nav__list.on .nav__item,
 .nav__list:hover .nav__item {
   color: var(--accent-link);
@@ -183,13 +182,6 @@ section[id] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.logo {
-  font-size: 28px;
-  border: 2px solid var(--accent-link);
-  padding: 0 12px;
-  border-radius: 8px;
-  font-weight: 700;
 }
 .close__menu,
 .open__menu {
