@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bidhan Karmokar</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="style.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -87,9 +86,9 @@
               </div>
             </div>
           </div>
-          <div class="home__img">
-            <img src="./images/hero-image.webp" alt="Bidhan home image" />
-          </div>
+          <figure class="home__img">
+            <img src="./images/hero-image.webp" alt="Hero section image" width="504" height="504" fetchpriority="high" loading="lazy"/>
+          </figure>
         </div>
         <div class="wrapper stats">
           <div class="stats__item">
@@ -145,9 +144,9 @@
               to build robust, scalable, and end-to-end web solutions.
             </p>
           </div>
-          <div class="about__image">
-            <img src="./images/about.webp" alt="Bidhan about image" />
-          </div>
+          <figure class="about__image">
+            <img src="./images/about.webp" alt="About section image" width="502" height="502" fetchpriority="high" loading="lazy"/>
+          </figure>
         </div>
         <div class="group">
           <div class="education">
@@ -385,6 +384,10 @@
             <img
               src="./images/liquid-effect.webp"
               alt="Project image one"
+              height="296"
+              width="400"
+              fetchpriority="high"
+              loading="lazy"
             />
             <div class="overlay">
               <div class="icons">
@@ -397,7 +400,10 @@
           </div>
 
           <div class="work__card two">
-            <img src="./images/clip-path.webp" alt="Project image two" />
+            <img src="./images/clip-path.webp" alt="Project image two" height="620"
+              width="400"
+              fetchpriority="high"
+              loading="lazy"/>
             <div class="overlay">
               <div class="icons">
                 <a href="#" title="View Site"
@@ -412,6 +418,10 @@
             <img
               src="./images/modernlook.webp"
               alt="Project image three"
+              height="296"
+              width="400"
+              fetchpriority="high"
+              loading="lazy"
             />
             <div class="overlay">
               <div class="icons">
@@ -426,6 +436,10 @@
             <img
               src="./images/mordernweb.webp"
               alt="Project image three"
+              height="620"
+              width="400"
+              fetchpriority="high"
+              loading="lazy"
             />
             <div class="overlay">
               <div class="icons">
@@ -441,6 +455,10 @@
             <img
               src="./images/colorfullweb.webp"
               alt="Project image four"
+              height="620"
+              width="400"
+              fetchpriority="high"
+              loading="lazy"
             />
             <div class="overlay">
               <div class="icons">
@@ -456,6 +474,10 @@
             <img
               src="./images/aiwebsite.webp"
               alt="Project image five"
+              height="620"
+              width="400"
+              fetchpriority="high"
+              loading="lazy"
             />
             <div class="overlay">
               <div class="icons">
@@ -470,6 +492,10 @@
             <img
               src="./images/project.webp"
               alt="Project image seven"
+              height="296"
+              width="400"
+              fetchpriority="high"
+              loading="lazy"
             />
             <div class="overlay">
               <div class="icons">
@@ -484,6 +510,10 @@
             <img
               src="./images/bestproject.webp"
               alt="Project image eight"
+              height="296"
+              width="400"
+              fetchpriority="high"
+              loading="lazy"
             />
             <div class="overlay">
               <div class="icons">
@@ -518,6 +548,9 @@
                   alt="Bidhan"
                   class="card__image"
                   loading="lazy"
+                  fetchpriority="high"
+                  width="48"
+                  height="48"
                 />
                 <div class="card__meta">
                   <span class="card__name" itemprop="author">David Antro </span>
@@ -559,6 +592,9 @@
                   alt="Sarah"
                   class="card__image"
                   loading="lazy"
+                  fetchpriority="high"
+                  width="48"
+                  height="48"
                 />
                 <div class="card__meta">
                   <span class="card__name" itemprop="author">Sam Taylor</span>
@@ -601,6 +637,9 @@
                   alt="John"
                   class="card__image"
                   loading="lazy"
+                  fetchpriority="high"
+                  width="48"
+                  height="48"
                 />
                 <div class="card__meta">
                   <span class="card__name">John Doe</span>
@@ -633,6 +672,9 @@
                   alt="Mitu"
                   class="card__image"
                   loading="lazy"
+                  fetchpriority="high"
+                  width="48"
+                  height="48"
                 />
                 <div class="card__meta">
                   <span class="card__name">Lucia Paul</span>
@@ -667,7 +709,7 @@
             <!-- Featured -->
             <article class="blog__card blog__card--featured">
               <span class="blog__tag">Featured</span>
-              <img src="./images/imagefour.webp" alt="Building Modern Website" />
+              <img src="./images/imagefour.webp" alt="Building Modern Website" width="250" height="200" loading="lazy" fetchpriority="high"/>
               <h3 class="blog__card-title">
                 Building a Modern Portfolio with Sticky Navigation
               </h3>
@@ -680,7 +722,7 @@
 
             <article class="blog__card">
               <span class="blog__tag">JavaScript</span>
-              <img src="./images/imagethree.webp" alt="Dynamic Typing Explained" />
+              <img src="./images/imagethree.webp" alt="Dynamic Typing Explained" width="250" height="200" loading="lazy" fetchpriority="high"/>
               <h3 class="blog__card-title">Dynamic Typing Explained</h3>
               <p class="blog__desc">
                 typeof null keno object hoy — real explanation.
@@ -690,7 +732,7 @@
 
             <article class="blog__card">
               <span class="blog__tag">CSS</span>
-              <img src="./images/imageone.webp" alt="Grid vs flexbox" />
+              <img src="./images/imageone.webp" alt="Grid vs flexbox" width="250" height="200" loading="lazy" fetchpriority="high"/>
               <h3 class="blog__card-title">Grid vs Flexbox</h3>
               <p class="blog__desc">
                 Layout decision making for real-world UI.
@@ -700,7 +742,7 @@
 
             <article class="blog__card">
               <span class="blog__tag">UI</span>
-              <img src="./images/imagetwo.webp" alt="Dark light mode system" />
+              <img src="./images/imagetwo.webp" alt="Dark light mode system" width="250" height="200" loading="lazy" fetchpriority="high"/>
               <h3 class="blog__card-title">Dark Light Mode System</h3>
               <p class="blog__desc">
                 Theme toggle architecture with CSS variables.
@@ -816,22 +858,9 @@
         </p>
       </div>
     </footer>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
-      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
-      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+    <script src="script.js" defer></script>
   </body>
 </html>

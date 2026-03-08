@@ -38,18 +38,24 @@ h1 {
   color: var(--text-light);
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   line-height: 1.2;
   color: var(--text);
 }
 
-h2{ 
+h2 {
   max-width: fit-content;
   border-radius: 8px;
   border-bottom: 4px solid var(--accent-link);
   margin-inline: auto;
   padding: 0 8px;
-  font-size: clamp(28px, calc(28px + (40 - 28) * ((100vw - 320px) / (1280 - 320))), 40px);
+  font-size: clamp(
+    28px,
+    calc(28px + (40 - 28) * ((100vw - 320px) / (1280 - 320))),
+    40px
+  );
   margin-bottom: 56px;
 }
 
@@ -88,11 +94,12 @@ img {
   margin-inline: auto;
 }
 
-strong, .highlight {
+strong,
+.highlight {
   color: var(--accent-link);
 }
 
-.visually__hidden{ 
+.visually__hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -195,7 +202,11 @@ section[id] {
 
 .nav__lists {
   display: flex;
-  gap: clamp(16px, calc(16px + (40 - 16) * ((100vw - 320px) / (1280 - 320))), 40px);
+  gap: clamp(
+    16px,
+    calc(16px + (40 - 16) * ((100vw - 320px) / (1280 - 320))),
+    40px
+  );
 }
 
 .nav__list {
@@ -266,12 +277,20 @@ section[id] {
 }
 
 .home__heading {
-  font-size: clamp(36px, calc(36px + (56 - 36) * ((100vw - 320px)/(1280 - 320))), 56px);
+  font-size: clamp(
+    36px,
+    calc(36px + (56 - 36) * ((100vw - 320px) / (1280 - 320))),
+    56px
+  );
   margin-bottom: 40px;
 }
 
 .home__content .home__text {
-  font-size: clamp(16px, calc(16px + (18 - 16) * ((100vw - 320px)/(1280 - 320))), 18px);
+  font-size: clamp(
+    16px,
+    calc(16px + (18 - 16) * ((100vw - 320px) / (1280 - 320))),
+    18px
+  );
 }
 
 .home__img {
@@ -342,7 +361,9 @@ section[id] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .stats__item:hover {
@@ -553,7 +574,7 @@ section[id] {
 }
 
 .service__card {
-  background-color: hsl(0,0%,15%,0.1);
+  background-color: hsl(0, 0%, 15%, 0.1);
   backdrop-filter: blur(10px);
   padding: 2rem;
   border-radius: 4px;
@@ -601,8 +622,8 @@ section[id] {
 ========================= */
 .work__grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  grid-template-rows: repeat(4,300px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 300px);
   grid-template-areas:
     "one two three"
     "four two six"
@@ -636,7 +657,7 @@ section[id] {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: hsl(0,0%,15%,0.8);
+  background-color: hsl(0, 0%, 15%, 0.8);
   justify-content: center;
   align-items: center;
 }
@@ -653,14 +674,30 @@ section[id] {
 }
 
 /* Grid Areas */
-.one{grid-area:one;}
-.two{grid-area:two;}
-.three{grid-area:three;}
-.four{grid-area:four;}
-.five{grid-area:five;}
-.six{grid-area:six;}
-.seven{grid-area:seven;}
-.eight{grid-area:eight;}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
 
 /* =========================
    TESTIMONIALS
@@ -677,7 +714,7 @@ section[id] {
 }
 
 .testimonials__title {
-  font-size: clamp(2rem,5vw,3rem);
+  font-size: clamp(2rem, 5vw, 3rem);
   color: var(--text);
   margin-bottom: var(--s-1);
 }
@@ -694,17 +731,25 @@ section[id] {
   margin-top: 80px;
 }
 
-.card__one{grid-area:one;}
-.card__two{grid-area:two;}
-.card__three{grid-area:three;}
-.card__four{grid-area:four;}
+.card__one {
+  grid-area: one;
+}
+.card__two {
+  grid-area: two;
+}
+.card__three {
+  grid-area: three;
+}
+.card__four {
+  grid-area: four;
+}
 
 .testimonial__card {
-  background-color: hsl(0,0%,15%,0.1);
+  background-color: hsl(0, 0%, 15%, 0.1);
   padding: 32px;
   border-radius: 8px;
   border: 1px solid var(--secondary-bg);
-  transition: all 0.4s cubic-bezier(0.175,0.885,0.32,1.275);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .testimonial__card:hover {
@@ -1017,4 +1062,115 @@ section[id] {
 .footer__bottom span {
   color: var(--accent-link);
   font-weight: 500;
+}
+
+/* Media Qurey */
+@media (max-width: 1024px) {
+  .home__wrapper {
+    flex-direction: column;
+  }
+  .home__content {
+    text-align: center;
+  }
+  .btns {
+    justify-content: center;
+  }
+  .socials {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .about__wrapper {
+    flex-direction: column;
+  }
+
+  .about__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .work__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 300px);
+    grid-template-areas: "one two" "three two" "four five" "four six" "seven six" "seven eight";
+  }
+  .testimonials__wrapper {
+    grid-template-areas: "one one" "three two" "four two";
+  }
+  .blog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__bar {
+    position: absolute;
+    top: 0;
+    left: -1000px;
+    background-color: var(--secondary-bg);
+    padding: 12px 32px;
+    width: 280px;
+    height: 100vh;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .nav__bar.active {
+    visibility: visible;
+    pointer-events: auto;
+    left: 0;
+  }
+
+  .nav__lists {
+    flex-direction: column;
+    margin-top: 64px;
+  }
+
+  .close__menu,
+  .open__menu {
+    display: block;
+  }
+
+  .work__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: none;
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven,
+  .eight {
+    grid-area: auto;
+  }
+  .testimonials__wrapper {
+    grid-template-areas: 1fr;
+    grid-template-areas: none;
+    grid-template-rows: auto;
+  }
+  .card__one,
+  .card__two,
+  .card__three,
+  .card__four {
+    grid-area: auto;
+  }
+  .blog__grid {
+    grid-template-columns: 1fr;
+  }
+  .contact__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info__group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__top {
+    justify-content: center;
+  }
 }
