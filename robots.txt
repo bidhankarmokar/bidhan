@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bidhankarmokar.github.io/bidhan/sitemap.xml
