@@ -437,6 +437,10 @@ section[id] {
 .about__content p {
   text-wrap: balance;
 }
+.about__content .btn{ 
+  margin-top: 32px;
+  padding: 14px 28px;
+}
 .about__image {
   min-height: 600px;
   display: flex;
@@ -683,6 +687,7 @@ section[id] {
 .card__name {
   font-weight: 700;
   color: var(--text);
+  display: block;
 }
 .card__date {
   font-size: 0.8rem;
