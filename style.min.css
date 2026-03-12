@@ -6,7 +6,7 @@
   --text-light: #e0e0e0;
   --text: #c7c7c7;
   --accent-warning: #c3d83e;
-  --accent-link: #58a6ff;
+  --accent-link: #5ba8ff;
   --accent-error: #eb2424;
 }
 * {
@@ -37,7 +37,7 @@ button {
   color: inherit;
 }
 .wrapper,
-h2 {
+h2, .submit__btn{
   margin-inline: auto;
 }
 .btn,
@@ -57,12 +57,7 @@ h2 {
 body {
   line-height: 1.6;
 }
-.btn--primary:hover,
-.btn--secondary:hover,
-.submit__btn:hover {
-  box-shadow: 0 0 16px 4px rgb(255 255 255 / 0.1);
-}
-.blog__link,
+
 a {
   text-decoration: none;
 }
@@ -70,14 +65,12 @@ a {
 .stats__count span,
 h1 {
   color: var(--text-light);
-}
-h1 {
-  line-height: 1.1;
+  line-height: 1.2;
 }
 h2,
 h3,
 h4 {
-  line-height: 1.2;
+  line-height: 1.3;
 }
 h2 {
   max-width: fit-content;
@@ -91,8 +84,21 @@ h2 {
   );
   margin-bottom: 56px;
 }
+h3{ 
+  font-size: clamp(
+    24px,
+    calc(24px + (36 - 24) * ((100vw - 320px) / (1280 - 320))),
+    36px
+  );;
+}
 p {
   max-width: 65ch;
+  text-wrap: balance;
+  font-size: clamp(
+    16px,
+    calc(16px + (18 - 16) * ((100vw - 320px) / (1280 - 320))),
+    18px
+  );
 }
 ul {
   list-style: none;
@@ -103,8 +109,11 @@ button {
   cursor: pointer;
 }
 i {
-  max-width: 20px;
-  max-height: 20px;
+  font-size: clamp(
+    18px,
+    calc(18px + (24 - 18) * ((100vw - 320px) / (1280 - 320))),
+    24px
+  );
 }
 img {
   max-width: 100%;
@@ -137,7 +146,15 @@ strong {
   overflow: hidden;
 }
 section {
-  padding: 80px 10px;
+  padding: clamp(
+    64px,
+    calc(64px + (64 - 80) * ((100vw - 320px) / (1280 - 320))),
+    80px
+  )  clamp(
+    12px,
+    calc(12px + (16 - 12) * ((100vw - 320px) / (1280 - 320))),
+    16px
+  );
 }
 section[id] {
   scroll-margin-top: 80px;
@@ -149,15 +166,32 @@ section[id] {
 .btn {
   align-items: center;
   gap: 8px;
-  padding: 14px 28px;
+  padding: clamp(
+    6px,
+    calc(6px + (8 - 6) * ((100vw - 320px) / (1280 - 320))),
+    8px
+  )  clamp(
+    18px,
+    calc(18px + (28 - 18) * ((100vw - 320px) / (1280 - 320))),
+    28px
+  );;
   border-radius: 1000px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: clamp(
+    14px,
+    calc(14px + (16 - 14) * ((100vw - 320px) / (1280 - 320))),
+    16px
+  );
+  font-weight: 400;
   transition: 0.3s ease-in-out;
 }
 .btn--secondary {
   border: 2px solid var(--accent-link);
   color: var(--accent-link);
+}
+
+.btn--primary:hover,
+.btn--secondary:hover {
+  box-shadow: 0 0 16px 4px rgb(255 255 255 / 0.1);
 }
 .close__menu:hover,
 .header__btn:hover,
@@ -165,8 +199,19 @@ section[id] {
 .nav__list:hover .nav__item {
   color: var(--accent-link);
 }
+.logo{ 
+  max-width: clamp(
+    40px,
+    calc(40px + (56 - 40) * ((100vw - 320px) / (1280 - 320))),
+    56px
+  );
+}
 .header {
-  padding: 24px;
+  padding: clamp(
+    14px,
+    calc(14px + (24 - 14) * ((100vw - 320px) / (1280 - 320))),
+    24px
+  );
   border-bottom: 1px solid rgb(255 255 255 / 0.1);
   position: sticky;
   top: 0;
@@ -186,6 +231,9 @@ section[id] {
 .close__menu,
 .open__menu {
   display: none;
+}
+.open__menu i{ 
+  font-size: 24px;
 }
 .close__menu {
   position: absolute;
@@ -250,8 +298,8 @@ section[id] {
 }
 .home__heading {
   font-size: clamp(
-    36px,
-    calc(36px + (56 - 36) * ((100vw - 320px) / (1280 - 320))),
+    40px,
+    calc(40px + (56 - 40) * ((100vw - 320px) / (1280 - 320))),
     56px
   );
   margin-bottom: 40px;
@@ -384,12 +432,10 @@ section[id] {
   margin-bottom: 48px;
 }
 .about__content h3 {
-  font-size: 32px;
-  line-height: 1.3;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 .about__content p {
-  font-size: 18px;
+  text-wrap: balance;
 }
 .about__image {
   min-height: 600px;
@@ -795,20 +841,9 @@ section[id] {
   color: var(--text);
   outline: 0;
 }
-.submit__btn {
-  width: 100%;
-  padding: 14px;
-  background: var(--accent-link);
-  color: var(--bg);
-  border: none;
-  border-radius: 10px;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  transition: 0.3s;
+.submit__btn{ 
+  margin-inline: auto;
+  padding: 14px 28px;
 }
 .main__footer {
   background-color: var(--bg);
@@ -825,6 +860,7 @@ section[id] {
 .footer__legal,
 .footer__links {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
 }
 .footer__legal a,
@@ -876,7 +912,7 @@ section[id] {
   .about__content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
   }
   .work__grid {
@@ -920,6 +956,12 @@ section[id] {
     grid-template-rows: auto;
     grid-template-areas: none;
   }
+  .group .education,
+.group .experience,
+.other,
+.skill{ 
+  border: none;
+}
   .card__four,
   .card__one,
   .card__three,
