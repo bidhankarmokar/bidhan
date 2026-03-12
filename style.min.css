@@ -439,6 +439,7 @@ section[id] {
 }
 .about__content .btn{ 
   margin-top: 32px;
+  max-width: fit-content;
 }
 .about__image {
   min-height: 600px;
